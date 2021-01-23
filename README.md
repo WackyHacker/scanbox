@@ -6,7 +6,7 @@
 [![codecov](https://codecov.io/gh/moby/buildkit/branch/master/graph/badge.svg)](https://codecov.io/gh/moby/buildkit)
 
 Quieres automatizar la tarea de reconocimiento en una auditoría web? Pues con esta herramienta 
-lo puedes lograr en un menor tiempo de espera, que si lo hicieras manualmente.
+lo puedes lograr en un menor tiempo de espera que si lo hicieras manualmente.
 
 ![Un plan de marketing es un documento o plano que contiene las (1)](https://user-images.githubusercontent.com/69093629/105557857-83ac5780-5d0d-11eb-9954-f3aa1e285eb9.png)
 
