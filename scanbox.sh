@@ -73,7 +73,7 @@ function dependecies(){
     sleep 2
 
     for program in "${dependencies[@]}"; do 
-        echo -e "Herramienta: ${Rojoresaltado}$program"
+        echo -e "Tool: ${Rojoresaltado}$program"
 	sleep 1.5
 	test -f /usr/bin/$program
 	if [ $(echo $?) == "0" ]; then 
