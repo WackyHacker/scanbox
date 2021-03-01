@@ -19,6 +19,12 @@ Gris="\e[0;37m"
 Blanco="\e[1;37m"
 Colorinverso="\e[7;32m"
 
+ROJO="$(printf '\033[31m')" VERDE="$(printf '\033[32m')" NARANJA="$(printf '\033[33m')" AZUL="$(printf '\033[34m ') "
+MAGENTA="$(printf '\033[35m')" CYAN="$(printf '\033[36m')" BLANCO="$(printf '\033[37m')" NEGRO="$(printf '\ 033[30m ') "
+REDBG="$(printf '\033[41m')" GREENBG="$(printf '\033[42m')" ORANGEBG="$(printf '\033[43m')" BLUEBG="$(printf '\033[44m') "
+MAGENTABG="$(printf '\033[45m')" CYANBG="$(printf '\033[46m')" WHITEBG="$(printf '\033[47m')" BLACKBG="$(printf '\033[40m ') "
+RESETBG="$(printf '\e[0m\n')"
+
 trap ctrl_c INT 
 
 function ctrl_c(){
@@ -28,16 +34,21 @@ function ctrl_c(){
 
 function panel(){
     clear
-    echo -e "${Blanco}  \nHelp Panel"
-    echo    "----------"
-    echo -e "${Blanco}\n[*] Use:${Verde} ./scanbox.sh ${Purpura}-t ${Blanco}[TARGET_IP] ${Purpura}-s ${Blanco}Nmap ${Purpura}-e ${Blanco}exploit\n"
-    echo -e "${Purpuraresaltado}\t-t ${Blanco}| ${Blanco}[IP] of the machine HackTheBox "
-    echo -e "${Purpuraresaltado}\t-s ${Blanco}| ${Blanco}Scan machine "
-    echo -e "${Purpuraresaltado}\t-e ${Blanco}| Exploit search [Archive: XML]"
-    echo -e "\n${Blanco}--------------------------------------------------------"
-    echo -e "Author: WEIK (WackyHacker)"
-    echo -e ""
-    exit 0
+cat <<- EOF
+	    ${SLINEA}
+	    ${ROJO}        Help Panel
+            ----------
+            ${BLANCO}[*] Use:${VERDE} ./scanbox.sh ${MAGENTA}-t ${BLANCO}[TARGET_IP] ${MAGENTA}-s ${BLANCO}Nmap ${MAGENTA}-e ${BLANCO}exploit
+
+            ${MAGENTA}${TAB}-t ${BLANCO}| ${BLANCO}[IP] of the machine HackTheBox 
+    	    ${MAGENTA}${TAB}-s ${BLANCO}| ${BLANCO}Scan machine 
+            ${MAGENTA}${TAB}-e ${BLANCO}| Exploit search [Archive: XML]            
+
+            ${BLANCO}--------------------------------------------------------
+            Author: WEIK (WackyHacker)
+	EOF
+
+exit 0
 }
 
 function startAttack(){
