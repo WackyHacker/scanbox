@@ -40,9 +40,9 @@ cat <<- EOF
             ----------
             ${BLANCO}[*] Use:${VERDE} ./scanbox.sh ${MAGENTA}-t ${BLANCO}[TARGET_IP] ${MAGENTA}-s ${BLANCO}Nmap ${MAGENTA}-e ${BLANCO}exploit
 
-            ${MAGENTA}${TAB}-t ${BLANCO}| ${BLANCO}[IP] of the machine HackTheBox 
-    	    ${MAGENTA}${TAB}-s ${BLANCO}| ${BLANCO}Scan machine 
-            ${MAGENTA}${TAB}-e ${BLANCO}| Exploit search [Archive: XML]            
+            ${MAGENTA}${TAB}	    -t ${BLANCO}| ${BLANCO}[IP] of the machine HackTheBox 
+    	    ${MAGENTA}${TAB}	    -s ${BLANCO}| ${BLANCO}Scan machine 
+            ${MAGENTA}${TAB}	    -e ${BLANCO}| Exploit search [Archive: XML]
 
             ${BLANCO}--------------------------------------------------------
             Author: WEIK (WackyHacker)
